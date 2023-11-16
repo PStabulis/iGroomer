@@ -1,11 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
+import { relative } from 'path';
 import { StyleSheet, Text, View, Image, TextInput, TouchableOpacity, KeyboardAvoidingView } from 'react-native';
 
-export default function App() {
+export default function HomeScreen() {
   return (
     <View style={styles.container}>
       <View style={{flex: 1, width: 350,}}>
-        <Image style={styles.image} source={require("./assets/Group1.png")} />
+        <Image style={styles.image} source={require("../assets/Group1.png")} />
       </View>
       <View style={{flex: 2, backgroundColor:'#fff', width: 350, borderBottomLeftRadius: 15, borderBottomRightRadius: 15}}>
         <TextInput style={styles.input1} placeholder='E-MAIL'/>
@@ -25,6 +26,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    position: relative,
     paddingTop:100,
     paddingBottom: 100,
     backgroundColor: '#D2E3E0',

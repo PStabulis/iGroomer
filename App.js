@@ -1,24 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, TextInput, TouchableOpacity } from 'react-native';
+import HomeScreen from './components/HomeScreen';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <View style={{flex: 1, width: 350,}}>
-        <Image style={styles.image} source={require("./assets/Group2.png")} />
-      </View>
-      <View style={{flex: 5, width: 350, backgroundColor:'#fff', borderBottomLeftRadius: 15, borderBottomRightRadius: 15}}>
-        <TextInput style={styles.input1} placeholder='NOME'/>
-        <TextInput style={styles.input} placeholder='E-MAIL'/>
-        <TextInput style={styles.input} placeholder='SENHA' secureTextEntry/>
-        <TextInput style={styles.input} placeholder='CPF'/>
-        <TextInput style={styles.input} placeholder='DATA DE NASCIMENTO'/>
-        <TextInput style={styles.input} placeholder='TELEFONE'/>
-        <TouchableOpacity style={styles.button}>
-          <Text style={{color: '#fff'}}>Criar Conta</Text>
-        </TouchableOpacity>
-      </View>
-      <StatusBar style="auto" />
+      <HomeScreen/>
     </View>
   );
 }

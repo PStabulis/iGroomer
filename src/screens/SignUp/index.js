@@ -1,11 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image, TextInput, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, Image, TextInput, TouchableOpacity, ScrollView } from 'react-native';
 
-export default function SignUp() {
+export function SignUp() {
   return (
     <View style={styles.container}>
       <View style={{flex: 1, width: 350,}}>
-        <Image style={styles.image} source={require("./assets/Group2.png")} />
+        <Image style={styles.image} source={require("../../../assets/logo_2.png")} />
       </View>
       <View style={{flex: 5, width: 350, backgroundColor:'#fff', borderBottomLeftRadius: 15, borderBottomRightRadius: 15}}>
         <TextInput style={styles.input1} placeholder='NOME'/>

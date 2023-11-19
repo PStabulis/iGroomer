@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { relative } from 'path';
+// import { relative } from 'path';
 import { StyleSheet, Text, View, Image, TextInput, TouchableOpacity, KeyboardAvoidingView } from 'react-native';
 
 export default function HomeScreen() {
@@ -26,7 +26,6 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    position: relative,
     paddingTop:100,
     paddingBottom: 100,
     backgroundColor: '#D2E3E0',

@@ -1,5 +1,6 @@
 import { View, Text, TextInput, TouchableOpacity, Image } from 'react-native';
 import { styles } from './styles';
+import { StatusBar } from 'expo-status-bar';
 
 export function Login({ navigation }) {
   function handleAuthenticate() {
@@ -28,6 +29,7 @@ export function Login({ navigation }) {
           </View>
         </View>
       </View>
+      <StatusBar style="auto" />
     </View>
   )
 }

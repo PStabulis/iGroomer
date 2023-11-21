@@ -3,6 +3,7 @@ import { View, Text, TextInput, TouchableOpacity, Image } from 'react-native';
 import { styles } from './styles';
 import { encode } from 'base-64';
 import api from '../../api/api';
+import { StatusBar } from 'expo-status-bar';
 
 export function Login({ navigation }) {
   const [email, setEmail] = useState('');
@@ -57,6 +58,7 @@ export function Login({ navigation }) {
           </View>
         </View>
       </View>
+      <StatusBar style="auto" />
     </View>
   )
 }

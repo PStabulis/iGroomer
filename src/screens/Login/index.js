@@ -17,6 +17,11 @@ export function Login({ navigation }) {
     api.post('/users/auth' , { email, password: passEncript})
       .then(res => {
         console.log('response', res.data);
+        if (res.data) {
+          navigation.navigate('Dashboard')
+        } else {
+          console.log('Chamr toast');
+        }
       })
       .catch((error) => {
         console.log(error);
